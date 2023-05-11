@@ -1,0 +1,179 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    >
+
+    <Button
+        android:id="@+id/navButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navmenu_foreground"
+        android:textSize="16sp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/subLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navButton"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/heavyImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/heavy_image_foreground"
+            />
+
+        <TextView
+            android:id="@+id/heavyHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/heavyImage"
+            android:layout_alignParentTop="true"
+            android:text="Heavy"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/heavyImage"
+            android:layout_below="@id/heavyHeading"
+            android:text="PLACEHOLDER"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subLayout1"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/mediumImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/medium_image_foreground"
+            />
+
+        <TextView
+            android:id="@+id/mediumHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mediumImage"
+            android:layout_alignParentTop="true"
+            android:text="Medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mediumImage"
+            android:layout_below="@id/mediumHeading"
+            android:text="PLACEHOLDER"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subLayout2"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/lightImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/light_image_foreground"
+            />
+
+        <TextView
+            android:id="@+id/lightHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/lightImage"
+            android:layout_alignParentTop="true"
+            android:text="Light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/lightImage"
+            android:layout_below="@id/lightHeading"
+            android:text="PLACEHOLDER"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subLayout3"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/otherImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/other_image_foreground"
+            />
+
+        <TextView
+            android:id="@+id/otherHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/otherImage"
+            android:layout_alignParentTop="true"
+            android:text="Other"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/otherImage"
+            android:layout_below="@id/otherHeading"
+            android:text="PLACEHOLDER"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

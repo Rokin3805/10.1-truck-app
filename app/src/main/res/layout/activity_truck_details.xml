@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/truckImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/medium_image_foreground"
+        />
+
+
+    <TextView
+        android:id="@+id/type_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Type: Your Type"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/weight_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Max Weight: PLACEHOLDER"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/height_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Max Height: PLACEHOLDER"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/length_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Max Length: PLACEHOLDER"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/width_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Max Width: PLACEHOLDER"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

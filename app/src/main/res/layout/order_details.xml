@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    >
+
+    <LinearLayout
+        android:id="@+id/detailPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/fromLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="From:"
+            />
+
+        <TextView
+            android:id="@+id/fromDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="PLACEHOLDER"
+            />
+
+        <TextView
+            android:id="@+id/pickupLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Pickup Time:"
+            />
+
+        <TextView
+            android:id="@+id/pickupDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            />
+
+        <TextView
+            android:id="@+id/toLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            />
+
+        <TextView
+            android:id="@+id/recipientDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECIPIENT"
+            />
+
+        <TextView
+            android:id="@+id/deliveryTimeLabelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time:"
+            />
+
+        <TextView
+            android:id="@+id/deliveryTimeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            />
+
+        <TextView
+            android:id="@+id/goodDescLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Goods Description"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/weightLabelDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    />
+
+                <TextView
+                    android:id="@+id/weightDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    />
+
+                <TextView
+                    android:id="@+id/widthLabelDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Width"
+                    />
+
+                <TextView
+                    android:id="@+id/widthDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    />
+
+                <TextView
+                    android:id="@+id/heightLabelDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    />
+
+                <TextView
+                    android:id="@+id/heightDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/lengthLabelDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Length"
+                    />
+
+                <TextView
+                    android:id="@+id/lengthDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    />
+
+                <TextView
+                    android:id="@+id/truckLabelDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truck Type"
+                    />
+
+                <TextView
+                    android:id="@+id/truckDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

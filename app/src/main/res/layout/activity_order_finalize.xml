@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/detailPanel"
+        >
+
+        <TextView
+            android:id="@+id/from_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:layout_marginBottom="12dp"
+            />
+
+        <TextView
+            android:id="@+id/from_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            android:layout_marginBottom="12dp"
+            />
+
+
+        <TextView
+            android:id="@+id/pickup_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Time:"
+            android:layout_marginBottom="12dp"
+            />
+
+        <TextView
+            android:id="@+id/pickup_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            />
+
+        <TextView
+            android:id="@+id/to_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            />
+
+        <TextView
+            android:id="@+id/recicpient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECIPIENT"
+            />
+
+        <TextView
+            android:id="@+id/delivery_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time:"
+            />
+
+        <TextView
+            android:id="@+id/delivery_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            />
+
+
+        <TextView
+            android:id="@+id/good_description_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Goods Description"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/weight_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter weight"
+                    />
+
+                <EditText
+                    android:id="@+id/width_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter width"
+                    />
+
+                <EditText
+                    android:id="@+id/length_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter length"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/type_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter type"
+                    />
+
+                <EditText
+                    android:id="@+id/height_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter height"
+                    />
+
+                <EditText
+                    android:id="@+id/quantity_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter quantity"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/createOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Create Order"
+        />
+</RelativeLayout>
+
