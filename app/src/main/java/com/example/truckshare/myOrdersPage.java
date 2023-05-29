@@ -53,6 +53,13 @@ public class myOrdersPage extends AppCompatActivity implements myOrdersAdapter.O
 
     @Override
     public void onItemClick(int position) {
-        Toast.makeText(this, "Calling driver", Toast.LENGTH_SHORT).show();
+        Order clickedOrder = orderList.get(position);
+
+        //uses intent to bring order to maps page
+        Intent intent = new Intent(myOrdersPage.this, MapsActivity.class);
+        intent.putExtra("order", clickedOrder);
+        //still bringing username so it is not lost
+        intent.putExtra("username", username);
+        startActivity(intent);
     }
 }

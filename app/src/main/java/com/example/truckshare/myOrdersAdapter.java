@@ -65,6 +65,10 @@ public class myOrdersAdapter extends RecyclerView.Adapter<myOrdersAdapter.OrderV
             heightDetail = itemView.findViewById(R.id.heightDetail);
             lengthDetail = itemView.findViewById(R.id.lengthDetail);
             truckTypeDetail = itemView.findViewById(R.id.truckDetail);
+            this.listener = listener;
+
+            //set the click listener on the itemView
+            itemView.setOnClickListener(this);
         }
 
         @Override

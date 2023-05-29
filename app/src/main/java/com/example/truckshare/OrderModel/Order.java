@@ -1,6 +1,11 @@
 package com.example.truckshare.OrderModel;
 
-public class Order {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class Order implements Parcelable {
 
     private String user;
     private String sender;
@@ -32,6 +37,34 @@ public class Order {
         this.height = height;
         this.quantity = quantity;
     }
+
+    protected Order(Parcel in) {
+        user = in.readString();
+        sender = in.readString();
+        recipient = in.readString();
+        truckType = in.readString();
+        location = in.readString();
+        pickUpTime = in.readString();
+        pickUpDate = in.readString();
+        goodsType = in.readString();
+        weight = in.readString();
+        width = in.readString();
+        length = in.readString();
+        height = in.readString();
+        quantity = in.readString();
+    }
+
+    public static final Creator<Order> CREATOR = new Creator<Order>() {
+        @Override
+        public Order createFromParcel(Parcel in) {
+            return new Order(in);
+        }
+
+        @Override
+        public Order[] newArray(int size) {
+            return new Order[size];
+        }
+    };
 
     public String getUser() {
         return user;
@@ -135,5 +168,27 @@ public class Order {
 
     public void setQuantity(String quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeString(user);
+        parcel.writeString(sender);
+        parcel.writeString(recipient);
+        parcel.writeString(truckType);
+        parcel.writeString(location);
+        parcel.writeString(pickUpTime);
+        parcel.writeString(pickUpDate);
+        parcel.writeString(goodsType);
+        parcel.writeString(weight);
+        parcel.writeString(width);
+        parcel.writeString(length);
+        parcel.writeString(height);
+        parcel.writeString(quantity);
     }
 }
