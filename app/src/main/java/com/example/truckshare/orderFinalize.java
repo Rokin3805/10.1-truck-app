@@ -25,7 +25,9 @@ public class orderFinalize extends AppCompatActivity {
     EditText typeInput;
     EditText heightInput;
     EditText quantityInput;
-    String from; String pickupTime;
+    String from;
+    String pickupTime;
+    String location;
     String deliveryTime;
     String recipient;
     String weight;
@@ -46,7 +48,7 @@ public class orderFinalize extends AppCompatActivity {
         pickupTime = intent.getStringExtra("pickupTime");
         deliveryTime = intent.getStringExtra("deliveryTime");
         recipient = intent.getStringExtra("recipient");
-
+        location = intent.getStringExtra("pickupLocation");
         //put previous values in right placeholders
         fromText = findViewById(R.id.from_text);
         fromText.setText(from);
@@ -85,7 +87,7 @@ public class orderFinalize extends AppCompatActivity {
                 OrderDatabaseHelper dbHelper = new OrderDatabaseHelper(orderFinalize.this);
                 //create order object
                 //create a new Order object
-                Order order = new Order(from, from, recipient, type, from, pickupTime, deliveryTime, type, weight, width, length, height, quantity);
+                Order order = new Order(from, from, recipient, type, location, pickupTime, deliveryTime, type, weight, width, length, height, quantity);
 
 
                 long result = dbHelper.insertOrder(order);
